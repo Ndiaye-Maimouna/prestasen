@@ -1,0 +1,10 @@
+UPDATE categories SET icone = 'plomberie' WHERE nom = 'Plomberie';
+UPDATE categories SET icone = 'electricite' WHERE nom = 'Électricité';
+UPDATE categories SET icone = 'menuiserie' WHERE nom = 'Menuiserie';
+UPDATE categories SET icone = 'developpement' WHERE nom = 'Développement web';
+UPDATE categories SET icone = 'graphisme' WHERE nom = 'Graphisme';
+UPDATE categories SET icone = 'couture' WHERE nom = 'Couture';
+UPDATE categories SET icone = 'patisserie' WHERE nom = 'Pâtisserie';
+UPDATE categories SET icone = 'bijoux' WHERE nom = 'Bijoux artisanaux';
+UPDATE categories SET icone = 'produits_locaux' WHERE nom = 'Produits locaux';
+UPDATE categories SET icone = 'serigraphie' WHERE nom = 'Sérigraphie';

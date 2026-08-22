@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "568769133961",
+    "project_id": "prestasen-firebase-4a3ed",
+    "storage_bucket": "prestasen-firebase-4a3ed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568769133961:android:fd48bafcbd4d9774a23558",
+        "android_client_info": {
+          "package_name": "sn.prestasen.prestasen_frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi-u6ETiIObRpejmVYCdquSJPlwJrmSOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

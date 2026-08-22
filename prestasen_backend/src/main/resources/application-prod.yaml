@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    show-sql: false
+
+logging:
+  level:
+    com.prestasen: INFO
+    org.springframework.security: WARN
+
+app:
+  cors:
+    allowed-origins: "https://app.prestasen.sn"

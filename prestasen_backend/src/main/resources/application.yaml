@@ -1,0 +1,67 @@
+spring:
+  application:
+    name: prestasen_backend
+
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/prestasen?stringtype=unspecified
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:tap2use}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
+
+jwt:
+  secret: ${JWT_SECRET:AuKz4Hn6p2qFFYce/XsPlqXCJxn+M5VCPSc86QQnWUE=}
+  access-token-expiration: 900000
+  refresh-token-expiration: 2592000000
+
+sms:
+  provider: twilio
+  twilio:
+    account-sid: ${TWILIO_ACCOUNT_SID}
+    auth-token: ${TWILIO_AUTH_TOKEN}
+    from-number: ${TWILIO_FROM_NUMBER}
+
+app:
+  cors:
+    allowed-origins: "*"
+  otp:
+    expiration-minutes: 10
+    length: 6
+  upload:
+    directory: uploads
+    base-url: http://10.0.2.2:8080/files
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.prestasen: DEBUG
+    org.springframework.security: INFO

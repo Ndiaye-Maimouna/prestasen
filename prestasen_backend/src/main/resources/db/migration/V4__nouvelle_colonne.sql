@@ -1,0 +1,1 @@
+ALTER TABLE profils_professionnels ADD COLUMN position_automatique BOOLEAN NOT NULL DEFAULT true;
